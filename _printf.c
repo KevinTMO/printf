@@ -13,34 +13,34 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	if (*format == 0)
-	{
 		return (-1);
-	}
 	while (*format != '\0')
 	{
 		if (*format == '%')
 		{
 			switch (*(format + 1))
 			{
-				case '%':
-					count += _putchar('%');
-					format++;
-					break;
-				case 'c':
-					count += _printChar(args);
-					format++;
-					break;
-				case 's':
-					count += _printStr(args);
-					format++;
-					break;
-				case 'd':
-				case 'i':
-					count += _printDec(args);
-					format++;
-					break;
-				default:
-					count += _putchar('%');
+			case '\0':
+				return (-1);
+			case '%':
+				count += _putchar('%');
+				format++;
+				break;
+			case 'c':
+				count += _printChar(args);
+				format++;
+				break;
+			case 's':
+				count += _printStr(args);
+				format++;
+				break;
+			case 'd':
+			case 'i':
+				count += _printDec(args);
+				format++;
+				break;
+			default:
+				count += _putchar('%');
 			}
 		}
 		else
