@@ -30,6 +30,6 @@ This conversion will print out integers as characters
 .BR -d
 This conversion will print out integers as decimal format
 .SH BUGS
-For any known bug refer to "google" or Stack Overflow for more info.
+For any known bug refer to Google or Stack Overflow for more info.
 .SH AUTHOR
-Prof. Kevin Ramos, Jose Vazquez
+Kevin Ramos & Jose Vazquez

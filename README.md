@@ -24,7 +24,7 @@
 - va_copy (man 3 va_copy)
 - va_arg (man 3 va_arg)
 
-## Compilation process
+#$# Compilation process
 - This code will be compiled this way:
 
 :bangbang: $ gcc -Wall -Werror -Wextra -pedantic *.c

@@ -33,8 +33,8 @@ int _strlen(char *s)
 
 /**
  *_putstring - will put the string after getting the length
- *@s: is the string to print
- *Return: will return the string (argument) to print stdout
+ *@s: the string to print
+ *Return: (argument) to print stdout
  */
 
 int _putstring(char *s)
