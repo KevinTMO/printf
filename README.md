@@ -1,6 +1,7 @@
-# This readme will contain the requirements for the printf && Compilation code for testing
-## Requirements
-### General
+## _Printf
+- Prints formatted string and data to standart output
+
+# General requirements
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 14.04 LTS
 - Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
@@ -29,7 +30,18 @@
 
 :bangbang: $ gcc -Wall -Werror -Wextra -pedantic *.c
 
-- As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
-- Our main files will include your main header file (holberton.h): #include holberton.h
-- You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf. Example of test file that you could use:
-does not specify what to do with an edge case, do the same as printf
+#### How to implement & call the _printf function
+
+Make sure to #include the 'holberton.h' library
+
+Examples:
+
+_printf("Hi! My name is %s", myName);
+_printf("My grade is %c", myGrade);
+_printf("I am %d happy and next year I will be %i years old", myPercent, myAge)
+
+Outputs:
+
+Hi! my Name is Kevin
+My grade is A
+I am 100% happy and next year I will be 20 years old
