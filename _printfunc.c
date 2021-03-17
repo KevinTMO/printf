@@ -38,7 +38,7 @@ int _printChar(va_list args)
 
 int _printDec(va_list args)
 {
-	int arguments;
+	long int arguments;
 	int contador = 0;
 	int divisor;
 
