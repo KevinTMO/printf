@@ -1,0 +1,35 @@
+.TH _PRINTF(1) 2021-03-16 GNU
+.SH NAME
+_printf - format and prints data
+.SH SYPNOSIS
+.B #include "holberton.h"
+.B int _printf(const char *format, ...)
+.SH FORMAT
+String that specifies how output should be seen
+.SH DESCRIPTION
+Print ARGUMENT(s) according to  its specifier:
+.SH Return Value
+On success, will return numbers of characters to standard output. 
+On error negative value will be returned.
+.SH FORMAT SPECIFIERS
+.B Character ' % '
+This will indicate that a conversion of arguments needs to be print out.
+.TP
+.BR -c
+This conversion will print argument as characters
+.TP
+.BR -s
+This conversion will print out a string of characters
+.TP
+.BR -%
+Special character '%' will return the same value as character
+.TP
+.BR -i
+This conversion will print out integers as characters
+.TP
+.BR -d
+This conversion will print out integers as decimal format
+.SH BUGS
+For any known bug refer to "google" or Stack Overflow for more info.
+.SH AUTHOR
+Prof. Kevin Ramos, Jose Vazquez
